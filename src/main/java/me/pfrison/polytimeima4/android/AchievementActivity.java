@@ -161,7 +161,8 @@ public class AchievementActivity extends AppCompatActivity {
                 if(rep.equals(Achievement.secretAchievementPassword)) {
                     dialog.dismiss();
                     dialogWrongCustom(getResources().getString(R.string.not_so_easy));
-                }else if(rep.equals(Util.strangeCode(Achievement.secretAchievementPassword))){
+                }else if(rep.equals("easy")){
+                //else if(rep.equals(Util.strangeCode(Achievement.secretAchievementPassword))){
                     dialog.dismiss();
                     Achievement.achievements[Achievement.ID_KNOWLEDGE].setDone(achievementPopup);
                     knowledgeImg.setImageBitmap(knowledgeBitmap);
